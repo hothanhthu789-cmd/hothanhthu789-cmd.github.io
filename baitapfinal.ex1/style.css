@@ -1,0 +1,53 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+.registration-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 350px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.strength-meter {
+    height: 6px;
+    background: #eee;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none; 
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên</title>
+    
+    <link rel="stylesheet" href="/baitapfinal/style.css">
+</head>
+<body>
+
+    <div class="registration-card">
+        <h2>Đăng Ký Hệ Thống</h2>
+        
+        <form id="regForm">
+            <div class="form-group">
+                <label for="username">Tên người dùng</label>
+                <input type="text" id="username" placeholder="Từ 5-15 ký tự" required minlength="5" maxlength="15">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="Chữ và số" required>
+                
+                <div class="strength-meter">
+                    <div id="strengthBar" class="strength-bar"></div>
+                </div>
+                <div id="strengthText" class="strength-text">Độ mạnh: Chưa nhập</div>
+                
+                <span class="error-msg" id="passError">Mật khẩu phải bao gồm cả chữ và số!</span>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePic">Ảnh đại diện</label>
+                <input type="file" id="profilePic" accept=".jpg, .jpeg, .png" required>
+                <span class="error-msg" id="fileError">Vui lòng chọn định dạng JPG hoặc PNG.</span>
+            </div>
+
+            <button type="submit" id="submitBtn">Hoàn tất đăng ký</button>
+        </form>
+    </div>
+
+    <script src="/baitapfinal/script.js"></script>
+</body>
+</html>
