@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý linh kiện và Đăng ký</title>
+    <link rel="stylesheet" href="/baitapfinal.ex2/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="table-section">
+            <h2>Bảng linh kiện máy tính &copy;</h2>
+            <table id="priceTable">
+                <thead>
+                    <tr>
+                        <th>Tên linh kiện &trade;</th>
+                        <th>Giá (VND)</th>
+                        <th>Đánh giá &star;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&bull; CPU Intel&trade; Core i5</td>
+                        <td>5.000.000</td>
+                        <td>4.5/5</td>
+                    </tr>
+                    <tr>
+                        <td>&bull; RAM DDR4 8GB</td>
+                        <td>800.000</td>
+                        <td>4.0/5</td>
+                    </tr>
+                    <tr>
+                        <td>&bull; Ổ cứng SSD 256GB</td>
+                        <td>1.200.000</td>
+                        <td>4.8/5</td>
+                    </tr>
+                    <tr>
+                        <td>&bull; Card đồ họa RTX 3060</td>
+                        <td>8.500.000</td>
+                        <td>4.9/5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-group">
+                <button id="changeColorBtn" onclick="changeColor()">Đổi màu chữ</button>
+                <button>Sắp xếp theo giá</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="form-section">
+            <div class="registration-card">
+                <h3>Biểu mẫu đăng ký người dùng</h3>
+                <form id="regForm">
+                    <div class="form-group">
+                        <label for="username">Họ tên:</label>
+                        <input type="text" id="username" required minlength="5" maxlength="15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Mật khẩu:</label>
+                        <input type="password" id="password" required>
+                        <div class="strength-meter">
+                            <div id="strengthBar" class="strength-bar"></div>
+                        </div>
+                        <small id="strengthText">Độ mạnh: Chưa nhập</small>
+                        <span class="error-msg" id="passError">Mật khẩu phải chứa cả chữ và số!</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profilePic">Ảnh đại diện (JPG/PNG):</label>
+                        <input type="file" id="profilePic" accept=".jpg, .jpeg, .png" required>
+                        <span class="error-msg" id="fileError">Vui lòng chọn file .jpg hoặc .png!</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Gửi đăng ký</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="/baitapfinal.ex2/script.js"></script>
+</body>
+</html>

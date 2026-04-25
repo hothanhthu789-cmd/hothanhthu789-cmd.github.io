@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px; /* Padding */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.button-group {
+    margin-bottom: 30px;
+}
+
+
+.registration-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+}
+
+#regForm {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.strength-meter {
+    height: 6px;
+    background: #eee;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    transition: 0.3s;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.submit-btn {
+    align-self: flex-start; 
+    padding: 10px 20px;
+    cursor: pointer;
+}
