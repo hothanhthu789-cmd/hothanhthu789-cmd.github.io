@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài tập 2 - Chẵn Lẻ</title>
+    <script language="javascript">
+        var txta = prompt("Enter any integer");
+        if (txta == null || txta == "" || isNaN(txta)) {
+            document.write("<font color='red'>You must enter a number</font>");
+        } 
+        else if (parseFloat(txta) % 2 == 0) {
+            document.write("<font color='green'><b>" + txta + " is an even number</b></font>");
+        } 
+        else {
+            document.write("<font color='blue'><i>" + txta + " is an odd number</i></font>");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
