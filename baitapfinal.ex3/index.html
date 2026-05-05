@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="/baitapfinal.ex3/style.css">
+</head>
+<body>
+
+    <h2>Bảng Điểm Sinh Viên &reg;</h2>
+    <p>Quy định tại mục &sect; đào tạo: Điểm số trung bình phải &ge; 5.0 để đạt.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Môn học</th>
+                <th>Điểm số</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lập trình Web</td>
+                <td><input type="number" class="grade-input" value="8"></td>
+            </tr>
+            <tr>
+                <td>Xác suất thống kê</td>
+                <td><input type="number" class="grade-input" value="7"></td>
+            </tr>
+            <tr>
+                <td>Tài chính căn bản</td>
+                <td><input type="number" class="grade-input" value="9"></td>
+            </tr>
+            <tr>
+                <td>Kĩ năng lãnh đạo</td>
+                <td><input type="number" class="grade-input" value="6"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="controls">
+        <button id="calcBtn" onclick="calculateAverage()">Trung bình</button>
+        <p id="resultText">Điểm trung bình: <span>0</span></p>
+    </div>
+
+    <script src="/baitapfinal.ex3/script.js"></script>
+</body>
+</html>
