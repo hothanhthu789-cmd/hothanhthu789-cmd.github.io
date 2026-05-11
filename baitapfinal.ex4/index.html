@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực đơn nhà hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        button {
+            padding: 8px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thực đơn nhà hàng</h1>
+    <button onclick="filterMenu()">Lọc thực đơn</button>
+
+    <section>
+        <h2>Khai vị &reg;</h2>
+        <p class="item vegetarian">Salad rau - &ge; 50.000đ</p>
+        <p class="item">Súp gà - &ge; 60.000đ</p>
+    </section>
+
+    <section>
+        <h2>Món chính &sect;</h2>
+        <p class="item">Bò bít tết - &ge; 180.000đ</p>
+        <p class="item vegetarian">Mì xào rau củ - &ge; 90.000đ</p>
+    </section>
+
+    <section>
+        <h2>Tráng miệng</h2>
+        <p class="item vegetarian">Kem vani - &ge; 45.000đ</p>
+        <p class="item vegetarian">Bánh flan - &ge; 35.000đ</p>
+    </section>
+
+    <section>
+        <h2>Đồ uống</h2>
+        <p class="item vegetarian">Nước cam - &ge; 40.000đ</p>
+        <p class="item vegetarian">Trà đào - &ge; 35.000đ</p>
+    </section>
+
+    <script>
+        let onlyVegetarian = false;
+
+        function filterMenu() {
+            let items = document.getElementsByClassName("item");
+            onlyVegetarian = !onlyVegetarian;
+
+            for (let i = 0; i < items.length; i++) {
+                if (onlyVegetarian && !items[i].classList.contains("vegetarian")) {
+                    items[i].style.display = "none";
+                } else {
+                    items[i].style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
